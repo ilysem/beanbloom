@@ -672,38 +672,92 @@ TABLE OF CONTENTS
     }
     
     
-    .pill-nav ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 32px;
-        background: #8d985b;
-        border-radius: 30px;
-        padding: 12px 28px;
-        margin: 24px auto 0 auto;
-        width: 95%;
-        max-width: 520px;
-        list-style: none;
-      }
-      
-      .pill-nav li {
+    body {
+        font-family: Inter, sans-serif;
         margin: 0;
-        padding: 0;
       }
       
-      .pill-nav a {
-        color: #595635;
-        text-decoration: none;
+      .preorder-form {
+        background: #a76e46;
+        color: #fffcd2;
+        border-radius: 48px;
+        max-width: 520px;
+        margin: 40px auto;
+        padding: 36px 34px 38px 34px;
+        box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+      }
+      
+      .form-heading {
+        font-family: 'Playfair Display Black', serif;
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 14px;
+        color: #fffcd2;
+      }
+      
+      .form-subheading {
+        color: #fffcd2;
+        font-size: 1.08rem;
+        font-weight: 500;
+        margin-bottom: 34px;
+      }
+      
+      label {
+        display: block;
+        font-family: Inter, sans-serif;
+        font-size: 1.13rem;
+        color: #fffcd2;
+        margin-bottom: 8px;
+        margin-top: 20px;
         font-weight: 600;
-        font-size: 1.1rem;
-        transition: color 0.2s;
-        display: inline-block;
-        padding: 2px 8px;
       }
       
-      .pill-nav a:hover {
-        color: #3e3c1f;
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        border-bottom: 2px solid #fffcd2;
+        background: transparent;
+        font-size: 1.08rem;
+        font-family: Inter, sans-serif;
+        color: #fffcd2;
+        margin-bottom: 6px;
+        outline: none;
       }
+      
+      input::placeholder {
+        font-style: italic;
+        color: #ffe6b5;
+        font-size: 1.08rem;
+      }
+      
+      .order-btn {
+        display: block;
+        width: 60%;
+        margin: 38px auto 0 auto;
+        background: #fffcd2;
+        color: #6B683B;
+        border: none;
+        font-family: Inter, sans-serif;
+        font-size: 1.17rem;
+        font-weight: bold;
+        padding: 16px 0;
+        border-radius: 30px;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        transition: background 0.15s;
+      }
+      
+      .order-btn:hover, .order-btn:focus {
+        background: #6B683B;
+        color: #fffcd2;
+      }
+      
+      @media (max-width: 600px) {
+        .preorder-form { padding: 18px; border-radius: 25px; }
+        .form-heading { font-size: 1.3rem; }
+      }
+      
     
     /* CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT */
     
@@ -1059,3 +1113,4 @@ TABLE OF CONTENTS
     text-align: right;
     font-family: 'Inter', Arial, sans-serif;
 }
+
