@@ -1077,6 +1077,67 @@ TABLE OF CONTENTS
   }
   
   /* BEAN MENU SECTION */
+  .bean-menu{
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+  .menu-images  {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu-img{
+    display: flex;
+}
+.menu-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.mochacoffee-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 50%;
+}
+.mochacoffee-img img {
+    object-position: left top;
+}
+.icedcoffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 50%;
+}
+.icedcoffee-img img {
+    object-position: right top;
+}
+.smallcoffee-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 50%;
+}
+.smallcoffee-img img {
+    object-position: right bottom;
+}
+.lavendercoffee-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 50%;
+}
+.lavendercoffee-img img {
+    object-position: left bottom;
+}
   .menu-heading {
     text-align: center;
     margin-bottom: 2rem;
@@ -1138,10 +1199,16 @@ TABLE OF CONTENTS
 }
 
 .menu-columns {
-    display: flex;
-    gap: 48px;
-    justify-content: center;
-    margin-top: 24px;
+    padding: 0 5%;
+}
+
+@media (width > 768px) {
+    .menu-columns {
+        display: flex;
+        gap: 48px;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }
 
 .menu-col {
@@ -1171,32 +1238,28 @@ TABLE OF CONTENTS
     margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
+    gap: 1em;
     align-items: baseline;
     font-family: 'Inter', Arial, sans-serif;
 }
 
-.item-name {
-    font-weight: bold;
-    color: #37281D;
-    font-family: 'Inter', Arial, sans-serif;
-    margin-right: 8px;
+.menu-item {
+   
 }
 
-.item-desc {
-    font-family: 'Inter', Arial, sans-serif;
-    opacity: 0.8;
-    margin-right: 8px;
+.menu-description {
+   font-style: italic;
 }
 
-.item-price {
-    color: #37281D;
+.menu-price {
     font-weight: 700;
-    margin-left: 14px;
-    font-size: 18px;
-    min-width: 65px;
     text-align: right;
-    font-family: 'Inter', Arial, sans-serif;
+    justify-self: flex-end;
+   justify-content: end;
+
 }
+
+
 
 
 
