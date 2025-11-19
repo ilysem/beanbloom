@@ -489,6 +489,60 @@ TABLE OF CONTENTS
         padding-block: var(--unit-2xl);
         padding-inline: var(--unit-s);
     }
+
+    .beanbloom-footer {
+  background:#fdcbc1;
+  padding: 48px 7vw;
+  min-height: 240px;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.bb-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bb-footer-col {
+  flex: 1;
+  text-align: left;
+}
+
+.bb-footer-logo {
+  text-align: center;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.bb-footer-nav {
+  margin-top: 12px;
+}
+
+.bb-footer-nav a {
+  color: #7e7c4b;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.bb-footer-contact p,
+.bb-footer-social p {
+  color: #665f41;
+  font-size: 15px;
+}
+
+.footer-social-icons {
+  height: 36px;
+  margin-bottom: 6px;
+}
+
+.bb-footer-social {
+  text-align: center;
+}
+
     
     /* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
     .site-footer:has(.container) {
@@ -779,7 +833,7 @@ TABLE OF CONTENTS
     
     }
     
-    .order-form {
+    /* .order-form {
         background: #A16A42;
         color: #FFF6B6;
         max-width: 340px;
@@ -829,7 +883,7 @@ TABLE OF CONTENTS
       
       .order-form button:hover {
         background: #4c502f;
-      }
+      } */
     
       
       
@@ -948,7 +1002,7 @@ TABLE OF CONTENTS
     .observe-me.delay-6 { transition-delay: 0.9s; }
 
 
-/* ABOUT SECTION HEADINGS */
+/* ABOUT SECTION */
 .about-heading {
     font-family: 'Playfair Display', serif;
     color: #594634;
@@ -995,30 +1049,60 @@ TABLE OF CONTENTS
     font-weight: 900;
   }
   
-
-  /* CONTACT SECTION HEADINGS */
-  .playfair-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 64px;
-    font-weight: 900;
-    color: #5D4635; /* adjust color as needed */
-    letter-spacing: -2px;
-    margin: 0 8px 0 0;
-    display: inline-block;
-    vertical-align: middle;
+  /* INSIDE BB HEADING */
+  .inside-heading {
+    text-align: center;
+    margin-bottom: 2rem;
   }
   
-  .great-vibes-heading {
+  .inside-script {
+    display: block;
     font-family: 'Great Vibes', cursive;
-    font-size: 128px;
-    font-weight: normal;
-    color: #8c9b63;  /* use your preferred accent color */
-    margin: 0 14px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 0.9;
+    font-size: 2.2rem;
+    color: #939160; 
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.01em;
   }
   
+  .inside-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #5b4632; 
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+  }
+  
+  /* BEAN MENU SECTION */
+  .menu-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-script {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.1rem;
+    color: #A16A42; 
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.01em;
+  }
+  
+  .menu-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #6d4b36;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+  }
+
   .menu-section {
     border-radius: 24px;
     max-width: 800px;
@@ -1114,3 +1198,80 @@ TABLE OF CONTENTS
     font-family: 'Inter', Arial, sans-serif;
 }
 
+
+
+
+  
+
+  /* CONTACT SECTION HEADINGS */
+  .playfair-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #5D4635; 
+    letter-spacing: -2px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .great-vibes-heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 128px;
+    font-weight: normal;
+    color: #8c9b63;  
+    margin: 0 14px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0.9;
+  }
+
+  
+  body {
+    background: #F6DBD6;
+    font-family: "Inter", sans-serif;
+  }
+  
+  
+  /* .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1000px;
+    margin: 60px auto;
+  }
+  
+  
+  .card {
+    width: 100%;
+    padding-top: 135%; 
+    background: #B8B772;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 6px 0 #AFAF57;
+  }
+  
+  
+  .order-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6C6C40;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    gap: 4px;
+  }
+  
+  .order-btn span {
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  */
