@@ -1260,7 +1260,83 @@ TABLE OF CONTENTS
 }
 
 
-
+/* BLOOM MENU */
+.bloom-menu {
+    padding: 40px 20px 60px 20px;
+  }
+  
+  .menu-heading {
+    font-family: 'Playfair Display', serif;
+    color: #4e3b2b;
+    font-weight: 700;
+    font-size: 2.7em;
+    text-align: center;
+    margin-bottom: 34px;
+    letter-spacing: 0.03em;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px;
+    justify-items: center;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .menu-card {
+    background: #c3c27b; /* muted olive-gold */
+    border-radius: 32px;
+    width: 260px;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 2px 14px rgba(120,90,70,0.10);
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 22px;
+  }
+  
+  .menu-btn {
+    background: #847046;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.08em;
+    font-weight: 400;
+    box-shadow: 0 2px 10px rgba(120,90,70,0.08);
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .menu-btn strong {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @media (max-width: 800px) {
+    .card-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .menu-card {
+      width: 95%;
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+  
 
 
 
@@ -1296,45 +1372,53 @@ TABLE OF CONTENTS
   }
   
   
-  /* .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+ 
+
+
+  .featured-pairings {
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  .featured-pairings h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4E3B2B;
+    margin-bottom: 32px;
+  }
+  
+  .pairings-script {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 1em;
+  }
+  
+  .pairings-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .pairings-row {
+    display: flex;
+    justify-content: center;
     gap: 60px;
-    max-width: 1000px;
-    margin: 60px auto;
   }
   
-  
-  .card {
-    width: 100%;
-    padding-top: 135%; 
-    background: #B8B772;
-    border-radius: 40px;
-    position: relative;
-    box-shadow: 0 6px 0 #AFAF57;
+  .pairing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  
-  .order-btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #6C6C40;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 26px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 500;
-    display: inline-flex;
-    gap: 4px;
+  .pairing-img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
-  .order-btn span {
-    font-weight: 700;
-    font-style: italic;
+  .pairing-item div {
+    font-size: 1.8em;
+    color: #4E3B2B;
   }
   
-  */
