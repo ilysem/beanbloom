@@ -483,14 +483,11 @@ TABLE OF CONTENTS
     }
     
     
+      
     /* SITE FOOTER */
-    .site-footer {
-        background-color: var(--color-sitefooter-background);
-        padding-block: var(--unit-2xl);
-        padding-inline: var(--unit-s);
-    }
 
-    .beanbloom-footer {
+
+ .beanbloom-footer {
   padding: 48px 7vw;
   min-height: 240px;
   font-family: Inter, Arial, sans-serif;
@@ -1242,7 +1239,7 @@ TABLE OF CONTENTS
     padding: 40px 20px 60px;
   }
   
-  /* Heading */
+
   .menu-heading {
     font-family: 'Playfair Display', serif;
     color: #4e3b2b;
@@ -1253,7 +1250,7 @@ TABLE OF CONTENTS
     letter-spacing: 0.03em;
   }
   
-  /* THE FIXED GRID */
+
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1262,7 +1259,7 @@ TABLE OF CONTENTS
     margin: 0 auto;
   }
   
-  /* CARDS */
+
   .menu-card {
     background: #c3c27b;
     border-radius: 32px;
@@ -1275,7 +1272,7 @@ TABLE OF CONTENTS
     position: relative;
   }
   
-  /* IMAGE FIX — keeps things inside the card */
+
   .menu-card img {
     width: 100%;
     height: auto;
@@ -1283,7 +1280,7 @@ TABLE OF CONTENTS
     display: block;
   }
   
-  /* BUTTON */
+ 
   .menu-btn {
     background: #847046;
     color: #fff;
