@@ -491,7 +491,6 @@ TABLE OF CONTENTS
     }
 
     .beanbloom-footer {
-  background:#fdcbc1;
   padding: 48px 7vw;
   min-height: 240px;
   font-family: Inter, Arial, sans-serif;
@@ -1262,81 +1261,81 @@ TABLE OF CONTENTS
 
 /* BLOOM MENU */
 .bloom-menu {
-    padding: 40px 20px 60px 20px;
-  }
-  
-  .menu-heading {
-    font-family: 'Playfair Display', serif;
-    color: #4e3b2b;
-    font-weight: 700;
-    font-size: 2.7em;
-    text-align: center;
-    margin-bottom: 34px;
-    letter-spacing: 0.03em;
-  }
-  
+  padding: 40px 20px 60px 20px;
+}
+
+.menu-heading {
+  font-family: 'Playfair Display', serif;
+  color: #4e3b2b;
+  font-weight: 700;
+  font-size: 2.7em;
+  text-align: center;
+  margin-bottom: 34px;
+  letter-spacing: 0.03em;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 38px;
+  justify-items: center;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: #c3c27b; /* muted olive-gold */
+  border-radius: 32px;
+  width: 260px;
+  height: 280px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 2px 14px rgba(120,90,70,0.10);
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 22px;
+}
+
+.menu-btn {
+  background: #847046;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.08em;
+  font-weight: 400;
+  box-shadow: 0 2px 10px rgba(120,90,70,0.08);
+  cursor: pointer;
+  width: 200px;
+}
+
+.menu-btn strong {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
   .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 38px;
-    justify-items: center;
-    align-items: start;
-    max-width: 1100px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
   }
-  
   .menu-card {
-    background: #c3c27b; /* muted olive-gold */
-    border-radius: 32px;
-    width: 260px;
-    height: 280px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 2px 14px rgba(120,90,70,0.10);
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: 22px;
+    width: 95%;
+    height: 180px;
   }
-  
-  .menu-btn {
-    background: #847046;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 9px 18px;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.08em;
-    font-weight: 400;
-    box-shadow: 0 2px 10px rgba(120,90,70,0.08);
-    cursor: pointer;
-    width: 200px;
+}
+
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
-  
-  .menu-btn strong {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  @media (max-width: 800px) {
-    .card-grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-    .menu-card {
-      width: 95%;
-      height: 180px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .card-grid {
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-  }
-  
+}
+
 
 
 
@@ -1371,6 +1370,42 @@ TABLE OF CONTENTS
     font-family: "Inter", sans-serif;
   }
   
+  .bouquet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+  
+  .bouquet-card {
+    background: #bcc67a; /* the green shade behind flowers */
+    border-radius: 20px;
+    padding: 2rem 1.5rem 3.5rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .bouquet-card img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: -3rem; /* makes bouquet float above the card */
+  }
+  
+  .bouquet-card button {
+    background: #6a7347; /* darker olive */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .bouquet-card button:hover {
+    background: #505a34; /* hover darker */
+  }
   
 
  
