@@ -30,21 +30,17 @@
       <h1 class="hide-visually"><a href="index.html">Bean Bloom</a></h1>
     </div>
 
-    <nav class="site-nav" data-menustate="closed">
-      <button class="menubutton">
-        <span class="hide-visually">Menu</span>
-        <svg class="simple-navicon" width="24" height="21">
-          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
-          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
-          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
-        </svg>
-      </button>
-
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="styleguide.html">Style Guide</a></li>
-      </ul>
+    <nav class="pill-nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#inside" class="nav-link">Inside</a>
+        <a href="#bean" class="nav-link">Bean</a>
+        <a href="#bloom" class="nav-link">Bloom</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </nav>
+    
   </header>
 
   <!-- MAIN -->
@@ -83,27 +79,27 @@
           </div>
 
           <div class="col-5">
-            <section class="preorder-form">
-              <h2 class="form-heading">On your way?</h2>
-              <p class="form-subheading">
-                Skip the wait and have your coffee (and blooms) ready when you arrive.
-              </p>
 
-              <form>
-                <label for="bean">Bean</label>
-                <input id="bean" name="bean" type="text" placeholder="Blossom Latte">
 
-                <label for="blooms">Blooms</label>
-                <input id="blooms" name="blooms" type="text" placeholder="Blush Charm">
-
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text">
-
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="text">
-
-                <button type="submit" class="order-btn">Order Now</button>
+              <form class="order-card">
+                <h2>On your way?</h2>
+                <p>Skip the wait and have your coffee (and blooms) ready when you arrive.</p>
+              
+                <label>Bean</label>
+                <input type="text" placeholder="Blossom Latte">
+              
+                <label>Blooms</label>
+                <input type="text" placeholder="Blush Charm">
+              
+                <label>Name</label>
+                <input type="text">
+              
+                <label>Phone</label>
+                <input type="text">
+              
+                <button class="order-btn" type="submit">Order Now</button>
               </form>
+
             </section>
           </div>
 
@@ -120,27 +116,27 @@
         <div class="row">
 
           <div class="one-half">
-            <h2 class="about-heading observe-me onscroll-slide-in-from-left">
+            <h2>
               <span class="block-the">The</span>
               <span class="script-magic">Magic</span><br>
               <span class="block-of">of Bean / Bloom</span>
             </h2>
 
-            <p class="observe-me onscroll-slide-in-from-left">
+            <p>
               At Bean / Bloom, coffee and flowers come together to brighten the everyday. Our café blends the warmth of a handcrafted latte with the beauty of fresh blooms, creating a space that feels calm, inviting, and full of life.
               Whether you’re stopping in for your morning coffee, picking up a bouquet for someone special, or just taking a quiet moment for yourself, we’re here to make it meaningful. Every sip and every stem is crafted with care because little moments deserve to feel beautiful.
             </p>
           </div>
 
           <div class="one-half">
-            <img class="observe-me onscroll-slide-in-from-right" src="img/about-image.png" alt="Placeholder image" width="2000" height="1000">
+            <img src="img/about-image.png" alt="Placeholder image" width="2000" height="1000">
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- SWIPER SLIDER -->
+    <!-- INSIDE -->
     <section>
       <div class="inside-heading">
         <span class="inside-script">Bean/Bloom</span>
@@ -155,9 +151,9 @@
           <div class="swiper-slide">
             <img src="img/bb-interior-2.png" alt="placeholder image">
           </div>
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <img src="https://placehold.co/800x400/yellow/black" alt="placeholder image">
-          </div>
+          </div> -->
         </div>
 
         <div class="swiper-pagination"></div>
@@ -237,41 +233,49 @@
     </div>
     </section>
 
-    <!-- BLOOM MENU -->
+   <!-- BLOOM MENU -->
 
-    <section class="bouquet-grid">
-      <div class="bouquet-card">
-        <img src="img/blush-charm.png" alt="Blush Charm">
-        <button>Order <strong>Blush Charm</strong> $65</button>
+   <section class="bloom-menu">
+    <h2 class="menu-heading">Bloom Menu</h2>
+  
+    <div class="card-grid">
+  
+      <div class="menu-card">
+        <img src="img/blush-charm.png" alt="Blush Charm Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Blush Charm $65</button>
       </div>
-    
-      <div class="bouquet-card">
-        <img src="img/berry-bright.png" alt="Berry Bright">
-        <button>Order <strong>Berry Bright</strong> $65</button>
+  
+      <div class="menu-card">
+        <img src="img/berry-bright.png" alt="Berry Bright Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Berry Bright $65</button>
       </div>
-    
-      <div class="bouquet-card">
-        <img src="img/pure-grace.png" alt="Pure Grace">
-        <button>Order <strong>Pure Grace</strong> $72</button>
+  
+      <div class="menu-card">
+        <img src="img/pure-grace.png" alt="Pure Grace Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Pure Grace $72</button>
       </div>
-    
-      <div class="bouquet-card">
-        <img src="img/pure-grace.png" alt="Evening Glow">
-        <button>Order <strong>Evening Glow</strong> $70</button>
+  
+      <div class="menu-card">
+        <img src="img/evening-glow.png" alt="Evening Glow Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Evening Glow $70</button>
       </div>
-    
-      <div class="bouquet-card">
-        <img src="img/ golden-garden.png" alt="Golden Garden">
-        <button>Order <strong>Golden Garden</strong> $68</button>
+  
+      <div class="menu-card">
+        <img src="img/golden-garden.png" alt="Golden Garden Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Golden Garden $68</button>
       </div>
-    
-      <div class="bouquet-card">
-        <img src="img/wild-bloom.png" alt="Wild Bloom">
-        <button>Order <strong>Wild Bloom</strong> $68</button>
+  
+      <div class="menu-card">
+        <img src="img/wild-bloom.png" alt="Wild Bloom Bouquet">
+        <button class="menu-btn"><strong>Order</strong> Wild Bloom $68</button>
       </div>
-    </section>
-    
-      <img class="bloom-menu-image" src="img/bloom-menu-leaves.png" alt="Bloom Menu Leaves" width="2000" height="1000">
+  
+    </div>
+  </section>
+  
+  
+  
+
     
     
    
@@ -282,17 +286,17 @@
         <div class="row swapped">
 
           <div class="one-half">
-            <img class="observe-me onscroll-slide-in-from-right" src="img/contact-image.png" alt="Placeholder image" width="2000" height="1000">
+            <img src="img/contact-image.png" alt="Placeholder image" width="2000" height="1000">
           </div>
 
           <div class="one-half">
-            <h2 class="observe-me onscroll-slide-in-from-left contact-heading">
+            <h2>
               <span class="playfair-heading">Lets</span>
               <span class="great-vibes-heading">Bloom</span>
               <span class="playfair-heading">Together Always</span>
             </h2>
 
-            <p class="observe-me onscroll-slide-in-from-left">
+            <p>
               Looking for the perfect bouquet or have a question about our coffee?  
               We’d love to hear from you!  
               Visit us: 123 Blossom Lane  
