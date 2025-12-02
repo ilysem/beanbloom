@@ -654,7 +654,8 @@ TABLE OF CONTENTS
         width: 100%;
     }
     .site-header.on-top-of-hero + .site-main .hero {
-        padding-block-start: calc(var(--unit-3xl) + var(--unit-xl));
+        /* padding-block-start: calc(var(--unit-3xl) + var(--unit-xl)); */
+      padding-block-start: 300px;
     }
     
     /* CUSTOM HERO STYLING */
@@ -1401,13 +1402,32 @@ TABLE OF CONTENTS
   .pairings-row {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    margin-top: 100px;
+    /* gap: 60px; */
   }
   
   .pairing-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  .pairing-item:nth-child(1) img {
+    scale: .75;
+    border: 2px solid red;
+    /* margin-right: -20%; */
+    transform-origin: right bottom;
+    position: relative;
+    z-index: 10;
+    translate: 20% 5%;
+  }
+
+  .pairing-item:nth-child(2) img {
+    scale: 1.5;
+    border: 2px solid red;
+    translate: -50% 0;
+    transform-origin: left bottom;
+   
   }
   
   .pairing-img {
